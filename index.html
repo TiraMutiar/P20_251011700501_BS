@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Saya</title>
+
+    <!-- Bootstrap 5.3.2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .portfolio-item img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .hero {
+        padding: 120px 0;
+      }
+
+      .hero img {
+        width: 180px;
+        border-radius: 50%;
+        border: 5px solid #1893f7;
+        transition: transform 0.3s ease;
+      }
+
+      .hero img:hover {
+        transform: scale(1.05);
+      }
+
+      .navbar .nav-link {
+        transition: color 0.3s ease;
+      }
+
+      .navbar .nav-link:hover {
+        color: #ffffff;
+      }
+
+      .about-img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .about-img:hover {
+        transform: scale(1.01);
+      }
+
+      .about-ld {
+        text-align: justify;
+        line-height: 1.6;
+        font-size: 1.1rem;
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+        transition: 0.3s ease;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">MyPortfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About </a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+            <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero text-center bg-light">
+      <div class="container">
+        <img src="image/trmtr.jpg" alt="Profile" />
+        <h1 class="mt-4 fw-bold">Tira Mutiar</h1>
+        <p class="lead">Mahasiswa | Pemula | Freelancer</p>
+        <a href="#portfolio" class="btn btn-primary btn-lg mt-3">Lihat Karya Saya</a>
+      </div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-4 mb-md-0">
+            <img src="image/about.jpg" alt="About Me" class="about-img" />
+          </div>
+          <div class="col-md-7">
+            <h2 class="fw-bold mb-5">About Me</h2>
+            <p class="about-ld">
+              Halo! Saya <strong>Tira Mutiar</strong>, seorang mahasiswa Sistem Informasi yang memiliki minat besar di dunia teknologi dan desain web. Saya juga sedang belajar menjadi seorang freelancer di bidang digital, khususnya
+              pembuatan website dan desain UI.
+            </p>
+            <p class="about-ld">
+              Saya suka mengeksplor hal baru, berkreasi lewat project kecil, dan terus mengembangkan kemampuan di bidang front-end development. Saat ini saya masih di tahap belajar, tapi saya punya semangat tinggi untuk berkembang dan
+              menghasilkan karya yang bermanfaat.
+            </p>
+            <a href="#contact" class="btn btn-primary mt-3">Hubungi Saya</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Portfolio</h2>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="portfolio-item">
+              <img src="image/UTS.png" alt="Project 1" />
+              <h5 class="mt-3 fw-semibold">Project 1</h5>
+              <p>Ini adalah project UTS Semester 1.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="portfolio-item">
+              <img src="image/porto.png" alt="Project 2" />
+              <h5 class="mt-3 fw-semibold">Project 2</h5>
+              <p>Pembuatan Portofolio Pribadi (still progress)</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio-item">
+              <img src="image/Pengaduan.png" alt="Project 3" />
+              <h5 class="mt-3 fw-semibold">Project 3</h5>
+              <p>Pembuatan Website Pengaduan Masyarakat.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="portfolio-item">
+              <img src="image/UI.png" alt="Project 4" />
+              <h5 class="mt-3 fw-semibold">Project 4</h5>
+              <p>Design UI Aplikasi di Figma.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio-item">
+              <img src="image/apk.png" alt="Project 5" />
+              <h5 class="mt-3 fw-semibold">Project 5</h5>
+              <p>Pembuatan Website Absensi anak Magang.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Skills</h2>
+
+        <div class="row text-center">
+          <div class="col-md-3 col-6 mb-4">
+            <div class="p-4 border rounded shadow-sm">
+              <h6 class="fw-semibold">HTML</h6>
+              <div class="progress">
+                <div class="progress-bar bg-primary" style="width: 60%">50%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6 mb-4">
+            <div class="p-4 border rounded shadow-sm">
+              <h6 class="fw-semibold">CSS</h6>
+              <div class="progress">
+                <div class="progress-bar bg-primary" style="width: 60%">50%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6 mb-4">
+            <div class="p-4 border rounded shadow-sm">
+              <h6 class="fw-semibold">JavaScript</h6>
+              <div class="progress">
+                <div class="progress-bar bg-primary" style="width: 60%">50%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6 mb-4">
+            <div class="p-4 border rounded shadow-sm">
+              <h6 class="fw-semibold">BootStrap</h6>
+              <div class="progress">
+                <div class="progress-bar bg-primary" style="width: 60%">50%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experiences" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5 text">Experience</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <!-- Card 1 -->
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-body">
+                <h5 class="card-title text-primary fw-semibold">Intern - Digital Marketing</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Rumah Mesin | 2024</h6>
+                <p class="card-text mb-0">Menulis banyak artikel SEO, membantu pengembangan value website perusahaan.</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-body">
+                <h5 class="card-title text-primary fw-semibold">Freelance - Desain Web</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Project Pribadi</h6>
+                <p class="card-text mb-0">Membuat tampilan website portofolio dan UI sederhana menggunakan Figma & Bootstrap.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5 text">Certificates</h2>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Certificate 1 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="image/sertif1.png" class="card-img-top rounded-top" alt="Certificate 1" />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Belajar Dasar Pemrograman Web</h5>
+                <p class="card-text text-muted mb-0">Dicoding Indonesia | 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 2 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="image/sertif2.png" class="card-img-top rounded-top" alt="Certificate 2" />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Dasar Logika Pemrograman (Logic 101)</h5>
+                <p class="card-text text-muted mb-0">Dicoding Indonesia | 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 3 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="image/sertif3.png" class="card-img-top rounded-top" alt="Certificate 3" />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Belajar Dasar Visualisasi Data</h5>
+                <p class="card-text text-muted mb-0">Dicoding Indonesia | 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-4">Contact Me</h2>
+
+        <form class="mx-auto p-4 bg-white shadow rounded" style="max-width: 600px">
+          <div class="mb-3">
+            <label class="form-label">Nama</label>
+            <input type="text" class="form-control" placeholder="Masukkan nama..." />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Email kamu..." />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Pesan</label>
+            <textarea class="form-control" rows="4" placeholder="Tulis pesan..."></textarea>
+          </div>
+
+          <button class="btn btn-primary w-100">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-primary text-white text-center py-4">
+      <p class="mb-1 fw-semibold">Tira Mutiar</p>
+      <small>&copy; 2025. All Rights Reserved.</small>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
